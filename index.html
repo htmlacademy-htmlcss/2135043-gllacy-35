@@ -88,7 +88,7 @@
               </svg>Вход</a>
             <div class="popup-in">
               <h2 class="title title-popup-in">Личный кабинет</h2>
-              <div class="popup-in-content">
+              <form class="popup-in-content" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="field-in-group">
                   <label class="visually-hidden" for="in-mail-name">Логин</label>
                   <input class="field in-form-field" type="email" id="in-mail-name" name="in-mail-name"
@@ -97,16 +97,16 @@
                 <div class="field-in-group">
                   <label class="visually-hidden" for="password-user">Логин</label>
                   <input class="field in-form-field" type="password" id="password-user" name="password-user"
-                    placeholder="123456">
+                    placeholder="123456" required>
                 </div>
                 <div class="link-in-wrapper">
-                  <a class="button in-form-button" href="#">Войти</a>
+                  <button class="button in-form-button" type="submit">Войти</button>
                   <div class="form-in-wrapper">
                     <a class="link-in-form" href="#">Забыли пароль?</a>
                     <a class="link-in-form" href="#">Регистрация</a>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </li>
           <li class="header-navigation-item item-basket">
@@ -124,7 +124,7 @@
                   <li class="cart-item">
                     <a class="popup-cart-link" href="#">
                       <img class="popup-cart-image" src="images/icecream/circle_raspberry.png" width="46" height="46"
-                        alt="Сливочное мороженое с малиновым джемом">
+                        alt="Сливочное мороженое с малиновым джемом.">
                       <div class="popup-cart-wrapper">
                         <h3 class="title title-basket-popup">Малинка</h3>
                         <span class="popup-basket-unit">1 кг х 310 ₽</span>
@@ -144,7 +144,7 @@
                   <li class="cart-item">
                     <a class="popup-cart-link" href="#">
                       <img class="popup-cart-image" src="images/icecream/circle_bubble-gum.png" width="46" height="46"
-                        alt="Ванильный пломбир со сладкой посыпкой">
+                        alt="Ванильный пломбир со сладкой посыпкой.">
                       <div class="popup-cart-wrapper">
                         <h3 class="title title-basket-popup">Бабл-гам</h3>
                         <span class="popup-basket-unit">1,5 кг х 320 ₽</span>
@@ -212,7 +212,7 @@
           <div class="hero-slider-gallery">
             <div class="hero-slider-wrapper">
               <img class="hero-slider-foto foto-strawberry" src="images/hero/strawberry_icecream.png" width="306"
-                height="507" alt="Изображение сливочного рожка с клубничным джемом">
+                height="507" alt="Изображение сливочного рожка с клубничным джемом.">
               <div class="hero-slider-controls">
                 <button class="hero-slider-button slider-next" type="button">
                   <svg class="slider-icon-button" aria-hidden="true" focusable="false" width="6" height="12"
@@ -435,7 +435,7 @@
       <div class="main-blog-subscription-wrapper">
         <article class="main-shop-blog">
           <h2 class="visually-hidden">Добро пожаловать в блог магазина мороженого Глейси!</h2>
-          <a class="main-blog-about">
+          <a class="main-blog-about" href="#">
             <h3 class="title title-main-blog">Новое в нашем блоге</h3>
             <p class="main-blog-posting">10 способов сервировки фруктовых щербетов<br>к столу</p>
           </a>
@@ -629,7 +629,7 @@
           <span class="visually-hidden">Логотип HTML Academy</span>
         </a>
         <p class="footer-about-text">Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html
-            academy</a>© 2021</p>
+            academy</a> © 2021</p>
       </section>
     </footer>
     <div class="modal-container modal-container-close">

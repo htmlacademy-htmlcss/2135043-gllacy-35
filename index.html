@@ -16,7 +16,7 @@
             alt="Логотип магазина мороженого Глейси.">
         </a>
         <ul class="header-navigation-list list-left">
-          <li class="header-navigation-item">
+          <li class="header-navigation-item item-catalog">
             <a class="header-navigation-link link-right link-catalog" href="#">
               <svg class="icon-link-catalog" aria-hidden="true" focusable="false" width="12" height="6"
                 viewBox="0 0 12 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -26,28 +26,26 @@
               </svg>Каталог</a>
             <div class="popup-catalog">
               <h2 class="title title-popup-catalog">Новинки</h2>
-              <div class="popup-catalog-content">
-                <ul class="popup-catalog-list">
-                  <li class="popup-catalog-item">
-                    <a class="popup-catalog-link" href="#">Сливочное</a>
-                  </li>
-                  <li class="popup-catalog-item">
-                    <a class="popup-catalog-link" href="#">Щербеты</a>
-                  </li>
-                  <li class="popup-catalog-item">
-                    <a class="popup-catalog-link" href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="popup-catalog-item">
-                    <a class="popup-catalog-link" href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="popup-catalog-list">
+                <li class="popup-catalog-item">
+                  <a class="popup-catalog-link" href="#">Сливочное</a>
+                </li>
+                <li class="popup-catalog-item">
+                  <a class="popup-catalog-link" href="#">Щербеты</a>
+                </li>
+                <li class="popup-catalog-item">
+                  <a class="popup-catalog-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="popup-catalog-item">
+                  <a class="popup-catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
             </div>
           </li>
-          <li class="header-navigation-item">
+          <li class="header-navigation-item item-delivery">
             <a class="header-navigation-link link-right link-delivery" href="#">Доставка и оплата</a>
           </li>
-          <li class="header-navigation-item">
+          <li class="header-navigation-item item-about">
             <a class="header-navigation-link link-right link-about" href="#">О компании</a>
           </li>
         </ul>
@@ -91,13 +89,13 @@
               <form class="popup-in-content" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="field-in-group">
                   <label class="visually-hidden" for="in-mail-name">Логин</label>
-                  <input class="field in-form-field" type="email" id="in-mail-name" name="in-mail-name"
+                  <input class="field in-form-field field-login" type="email" id="in-mail-name" name="in-mail-name"
                     placeholder="email@example.com" required>
                 </div>
                 <div class="field-in-group">
                   <label class="visually-hidden" for="password-user">Логин</label>
-                  <input class="field in-form-field" type="password" id="password-user" name="password-user"
-                    placeholder="123456" required>
+                  <input class="field in-form-field field-password" type="password" id="password-user"
+                    name="password-user" placeholder="123456" required>
                 </div>
                 <div class="link-in-wrapper">
                   <button class="button in-form-button" type="submit">Войти</button>
@@ -188,8 +186,7 @@
               джемом –
               это идеальный десерт для всей семьи.
             </p>
-            <a class="button hero-button-about" href="#">
-              <span class="hero-button-text">Заказать</span>
+            <a class="button hero-button-about" href="#">Заказать
               <span class="submit-spinner-basic submit-spinner-open"></span>
             </a>
           </div>
@@ -451,7 +448,7 @@
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscription-email">
                 <span class="visually-hidden">Поле для ввода текста.</span>
-                <input class="field subscription-field" placeholder="email@example.com" type="email"
+                <input class="field subscription-field-email" placeholder="email@example.com" type="email"
                   name="subscription-email" id="subscription-email" required>
               </label>
               <button class="button subscription-button" type="submit">
@@ -596,9 +593,10 @@
         </ul>
       </section>
       <section class="footer-chapter footer-about">
+        <h2 class="visually-hidden">О нас</h2>
         <ul class="footer-information">
-          <li class="information-about">
-            <h2 class=" title title-page-footer">Для поставщиков</h2>
+          <li class="information-about for-suppliers">
+            <a class="information-link" href="#">Для поставщиков</a>
           </li>
           <li class="information-about about-documents">
             <a class="information-link" href="#">Наши документы</a>
@@ -653,12 +651,12 @@
             </div>
             <div class="field-group group-mail">
               <label class="visually-hidden" for="mail-title">Укажите e-mail</label>
-              <input class=" field feedback-form-field field-mail" type="email" id="mail-title" name="mail-title"
+              <input class="field feedback-form-field field-user-mail" type="email" id="mail-title" name="mail-title"
                 placeholder="email@example.com" required>
             </div>
             <div class="field-group group-comments">
               <label class="visually-hidden" for="name-comments"></label>
-              <textarea class="field feedback-form-field field-comments" id="name-comments" name="name-comments"
+              <textarea class="field feedback-form-field field-user-comments" id="name-comments" name="name-comments"
                 placeholder="В свободной форме"></textarea>
             </div>
             <button class="button feedback-form-button" type="submit">

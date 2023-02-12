@@ -91,13 +91,13 @@
               <div class="popup-in-content">
                 <div class="field-in-group">
                   <label class="visually-hidden" for="in-mail-name">Логин</label>
-                  <input class="field in-form-field" type="email" id="in-mail-name" name="in-mail-name"
+                  <input class="field in-form-field field-login" type="email" id="in-mail-name" name="in-mail-name"
                     placeholder="email@example.com" required>
                 </div>
                 <div class="field-in-group">
                   <label class="visually-hidden" for="password-user">Логин</label>
-                  <input class="field in-form-field" type="password" id="password-user" name="password-user"
-                    placeholder="123456">
+                  <input class="field in-form-field field-password" type="password" id="password-user"
+                    name="password-user" placeholder="123456">
                 </div>
                 <div class="link-in-wrapper">
                   <a class="button in-form-button" href="#">Войти</a>
@@ -236,31 +236,30 @@
           <fieldset class="catalog-filter-group group-fat">
             <legend class="title catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list list-fat">
-              <li class="catalog-filter-item item-radio">
+              <li class="catalog-filter-item item-fat">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="type-of-bluetooth" value="zero">
+                  <input class="visually-hidden control-input" type="radio" name="type-of-fat" value="fat-0%">
                   <span class="control-mark"></span>
                   <span class="control-label">0%</span>
                 </label>
               </li>
-              <li class="catalog-filter-item item-radio">
+              <li class="catalog-filter-item item-fat">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="type-of-bluetooth" value="ten"
-                    checked>
+                  <input class="visually-hidden control-input" type="radio" name="type-of-fat" value="афе-10%" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">до 10%</span>
                 </label>
               </li>
-              <li class="catalog-filter-item item-radio">
+              <li class="catalog-filter-item item-fat">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="type-of-bluetooth" value="before">
+                  <input class="visually-hidden control-input" type="radio" name="type-of-fat" value="fat-before-30%">
                   <span class="control-mark"></span>
                   <span class="control-label">до 30%</span>
                 </label>
               </li>
-              <li class="catalog-filter-item item-radio">
+              <li class="catalog-filter-item item-fat">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="type-of-bluetooth" value="above">
+                  <input class="visually-hidden control-input" type="radio" name="type-of-fat" value="fat-above-30%">
                   <span class="control-mark"></span>
                   <span class="control-label">выше 30%</span>
                 </label>

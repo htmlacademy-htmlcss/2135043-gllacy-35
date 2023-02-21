@@ -135,14 +135,17 @@ body {
 
 .item-catalog {
   width: 117px;
+  min-height: 36px;
 }
 
 .item-delivery {
   width: 179px;
+  min-height: 36px;
 }
 
 .item-about {
   width: 126px;
+  min-height: 36px;
 }
 
 .list-right {
@@ -157,6 +160,9 @@ body {
 
 .header-navigation-item {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .item-phone {
@@ -445,6 +451,7 @@ body {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 4px solid #fcfcfc;
   box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+  cursor: pointer;
 }
 
 .hero-button-about:focus-visible {
@@ -492,6 +499,7 @@ body {
   background-color: #fcfcfc;
   outline: 0;
   color: #2d3440;
+  cursor: pointer;
 }
 
 .hero-slider-button:focus-visible {
@@ -580,19 +588,18 @@ body {
   z-index: -1;
 }
 
-.foto-banana {
-  background-image: url("../images/hero/banana_icecream.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
+.foto-mini-banana {
+  width: 90px;
+  height: 150px;
+  margin: 0 auto;
 }
 
-.foto-caramel {
-  background-image: url("../images/hero/caramel_icecream.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
+.foto-mini-caramel {
+  width: 85px;
+  height: 150px;
+  margin: 0 auto;
 }
+
 
 .hero-slider-buttons {
   display: flex;
@@ -634,6 +641,7 @@ body {
 .hero-slider-pagination-button:hover {
   outline: 1px solid #fcfcfc;
   outline-offset: -1px;
+  cursor: pointer;
 }
 
 .hero-slider-pagination-button:focus-visible {
@@ -798,6 +806,7 @@ body {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 4px solid #fcfcfc;
   box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+  cursor: pointer;
 }
 
 .button-present:focus-visible {
@@ -857,6 +866,8 @@ body {
   flex-direction: column;
   gap: 8px;
   width: 190px;
+  min-height: 332px;
+  padding-bottom: 24px;
   margin: 0 auto;
   top: -51px;
   margin-bottom: -51px;
@@ -910,9 +921,9 @@ body {
   width: 32px;
   height: 32px;
   padding: 8px 11px;
-
   box-sizing: border-box;
   background-color: #ff2f64;
+  outline: 0;
   border: 0;
   color: #ffffff;
 }
@@ -933,6 +944,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   outline: 2px solid #ff2f64;
   color: #000000;
+  cursor: pointer;
 }
 
 .button-product-card:focus-visible {
@@ -957,6 +969,7 @@ body {
   min-height: 480px;
   border-radius: 16px;
   box-sizing: border-box;
+  background-color: #fcfcfc;
   background-image: url("../images/backgrounds/foto_background_wafer.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1098,10 +1111,15 @@ body {
 }
 
 .main-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 570px;
   min-height: 224px;
   border-radius: 16px;
   box-sizing: border-box;
+  background-color: #fcfcfc;
   background-image: url("../images/backgrounds/foto_background_mail.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1111,10 +1129,11 @@ body {
 .main-subscription-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 42px;
   width: 558px;
-  min-height: 212px;
+  height: 100%;
   padding: 26px;
   margin: 6px;
   background-color: #ffffff;
@@ -1204,6 +1223,7 @@ body {
   color: #2d3440;
   outline: 4px solid #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .subscription-button:focus-visible {
@@ -1227,23 +1247,17 @@ body {
 .main-delivery {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   width: 1170px;
   min-height: 534px;
   padding: 64px 64px 64px 100px;
+  gap: 135px;
   border-radius: 16px;
+  background-color: #fcfcfc;
   background-image: url("../images/backgrounds/foto_background_delivery.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: left center;
-  box-sizing: border-box;
-}
-
-.main-delivery-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1006px;
-  min-height: 406px;
-  gap: 135px;
   box-sizing: border-box;
 }
 
@@ -1269,6 +1283,7 @@ body {
 .main-appointment {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 32px;
   width: 500px;
   min-height: 406px;
@@ -1330,6 +1345,7 @@ body {
   color: #2d3440;
   outline: 4px solid #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .main-button-appointment:focus-visible {
@@ -1388,6 +1404,11 @@ body {
   padding: 0;
   margin: 0;
   display: block;
+}
+
+.tooltip-date-toggle:hover,
+.tooltip-address-toggle:hover {
+  cursor: pointer;
 }
 
 .tooltip-date-toggle:focus-visible,
@@ -1546,6 +1567,7 @@ body {
   color: #2d3440;
   outline: 4px solid #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .main-button-feedback:focus-visible {
@@ -1990,6 +2012,7 @@ body {
   color: #2d3440;
   outline: 4px solid #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .in-form-button:focus-visible {
@@ -2226,6 +2249,7 @@ body {
   color: #2d3440;
   outline: 4px solid #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .button-basket-popup:focus-visible {
@@ -2385,6 +2409,7 @@ body {
   color: #2d3440;
   outline: 4px solid #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .feedback-form-button:focus-visible {
@@ -2427,7 +2452,7 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  width: 335px;
+  min-width: 335px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -2445,6 +2470,10 @@ body {
   color: #2d3440;
   text-align: left;
   text-decoration: none;
+  position: relative;
+  min-width: 58px;
+  padding-right: 20px;
+  margin-right: 8px;
 }
 
 .breadcrumbs-link:hover {
@@ -2458,14 +2487,6 @@ body {
 
 .breadcrumbs-link:active {
   opacity: 30%;
-}
-
-.breadcrumbs-main,
-.breadcrumbs-catalog {
-  position: relative;
-  min-width: 58px;
-  padding-right: 20px;
-  margin-right: 8px;
 }
 
 .breadcrumbs-main::after,
@@ -2493,7 +2514,7 @@ body {
 .breadcrumbs-active::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 164px;
   height: 1px;
   bottom: -2px;
   left: 0;
@@ -2564,6 +2585,7 @@ body {
 
 .select-control:hover {
   background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
 }
 
 .select-control:focus-visible {
@@ -2763,6 +2785,7 @@ body {
   outline: 2px solid #fcfcfc;
   outline-offset: -2px;
   border: 0;
+  cursor: pointer;
 }
 
 .control-input:focus-visible + .control-mark {
@@ -2856,6 +2879,7 @@ body {
 .button-show-sorting:hover {
   background-color: #fcfcfc;
   outline: 2px solid rgba(252, 252, 252, 0.3);
+  cursor: pointer;
 }
 
 .button-show-sorting:focus-visible {
@@ -2895,6 +2919,7 @@ body {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 4px solid #fcfcfc;
   box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+  cursor: pointer;
 }
 
 .button-product:focus-visible {
@@ -3002,6 +3027,7 @@ body {
 
 .pagination-button:hover {
   opacity: 60%;
+  cursor: pointer;
 }
 
 .pagination-button:focus-visible {
